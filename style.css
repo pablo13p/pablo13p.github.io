@@ -34,6 +34,46 @@
     color: #615151;
 }
 
+/* Estilos generales */
+
+section{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+h1{
+    font-size: 2.5rem;
+
+}
+
+.dark-section{
+    color: white;
+    background-color: #1b1b32;
+}
+
+/* About me */
+
+.about-me{
+    height: 500px;
+    padding: 10px;
+}
+
+.container-about-me{
+    max-width: 600px;
+    text-align: center;
+}
+
+.section-title{
+    font-size: 2rem;
+    padding: 15px 0;
+}
+
+.section-text{
+    font-size: 1.2rem;
+}
+
 /* Responsive Design */
 
 @media screen and (max-width: 767px) {
