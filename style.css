@@ -53,6 +53,11 @@ h1{
     background-color: #1b1b32;
 }
 
+.clare-section{
+    color: black;
+    background-color: white;
+}
+
 /* About me */
 
 .about-me{
@@ -72,6 +77,53 @@ h1{
 
 .section-text{
     font-size: 1.2rem;
+}
+
+/* Experience */
+
+.experience{
+    padding: 40px 40px 60px 40px;
+}
+
+.experience .column{
+    padding: 20px;
+    border: 2px solid #8080804d;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 12px;
+    transition: all 0.2s ease-in;
+}
+
+.experience .column:hover{
+    color: white;
+    background-color: #0a0a23;
+}
+
+.experience-title{
+    font-size: 1.25rem;
+    font-weight: 700;
+    line-height: 1.2;
+    margin: 10px 0 4px;
+    min-height: calc(1.2em * 2);
+}
+
+.experience svg{
+  color: #fff;
+  background-color: #0a0a23;
+  width: 3rem;
+  height: 3rem;
+  padding: 10px 0;
+  border-radius: 50%;
+}
+
+.badges-container{
+    font-size: 20px;
+    font-weight: bold;
+}
+
+.badges{
+    margin: 5px;
 }
 
 /* Responsive Design */
