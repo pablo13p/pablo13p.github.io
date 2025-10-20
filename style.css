@@ -36,6 +36,8 @@
 
 /* Estilos generales */
 
+html { scroll-behavior: smooth; }
+
 section {
   display: flex;
   flex-direction: column;
