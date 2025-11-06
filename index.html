@@ -1,15 +1,14 @@
 <!DOCTYPE html>
 <html lang="en">
-
 <head>
-  <!-- Metadata -->
+  <!-- Meta -->
   <meta charset="UTF-8" />
   <meta name="author" content="Pablo Rubio Prado" />
   <meta name="description" content="Software Development Portfolio by Pablo Rubio Prado" />
   <meta name="keywords" content="HTML, CSS, JavaScript, Bootstrap" />
   <meta name="viewport" content="width=device-width, initial-scale=1" />
   <!-- Title -->
-  <title>Pablo Rubio Prado | Software Developer</title>
+  <title data-i18n="meta.title">Pablo Rubio Prado | Software Developer</title>
   <!-- Favicon -->
   <link rel="icon" type="image/x-icon" href="images/braces.svg" />
   <!-- Bootstrap -->
@@ -20,59 +19,67 @@
 </head>
 
 <body>
-  <!-- Navigation Bar -->
+  <!-- Navbar -->
   <nav class="navbar navbar-expand-md navbar-light">
     <div class="container-fluid">
       <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbar-toggler"
-        aria-controls="navbarTogglerDemo01" aria-expanded="false" aria-label="Toggle navigation">
+        aria-controls="navbarTogglerDemo01" aria-expanded="false"
+        aria-label="Toggle navigation" data-i18n-attr-aria-label="ui.menuToggle">
         <span class="navbar-toggler-icon"></span>
       </button>
       <div class="collapse navbar-collapse" id="navbar-toggler">
         <a class="navbar-brand" href="#">
-          <img src="images/braces.svg" width="50" alt="Website logo" />
+          <img src="images/braces.svg" width="50" alt="Website logo" data-i18n-attr-alt="ui.siteLogoAlt" />
         </a>
         <ul class="navbar-nav d-flex justify-content-center align-items-center">
-          <li class="nav-item">
-            <a class="nav-link active" aria-current="page" href="#">About Me</a>
-          </li>
-          <li class="nav-item">
-            <a class="nav-link" href="#experience">Experience</a>
-          </li>
-          <li class="nav-item">
-            <a class="nav-link" href="#skills">Skills</a>
-          </li>
-          <li class="nav-item">
-            <a class="nav-link" href="#projects">Projects</a>
-          </li>
-          <li class="nav-item">
-            <a class="nav-link" href="#education">Education</a>
-          </li>
-          <li class="nav-item">
-            <a class="nav-link" href="#certificates">Certificates</a>
-          </li>
-          <li class="nav-item">
-            <a class="nav-link" href="#contact">Contact</a>
+          <li class="nav-item"><a class="nav-link active" aria-current="page" href="#about" data-i18n="nav.about">About Me</a></li>
+          <li class="nav-item"><a class="nav-link" href="#experience" data-i18n="nav.experience">Experience</a></li>
+          <li class="nav-item"><a class="nav-link" href="#skills" data-i18n="nav.skills">Skills</a></li>
+          <li class="nav-item"><a class="nav-link" href="#projects" data-i18n="nav.projects">Projects</a></li>
+          <li class="nav-item"><a class="nav-link" href="#education" data-i18n="nav.education">Education</a></li>
+          <li class="nav-item"><a class="nav-link" href="#certificates" data-i18n="nav.certificates">Certificates</a></li>
+          <li class="nav-item"><a class="nav-link" href="#contact" data-i18n="nav.contact">Contact</a></li>
+          <!-- Lang switch -->
+          <li class="nav-item ms-2">
+            <button id="lang-switcher" class="btn btn-outline-secondary btn-sm" type="button"
+              aria-label="Change language" data-i18n="ui.langButton">ES</button>
           </li>
         </ul>
       </div>
     </div>
   </nav>
-  <!-- Hero Section -->
+
+  <!-- Hero -->
   <section class="hero align-items-stretch">
     <div class="hero-principal d-flex flex-column justify-content-center align-items-center">
-      <img class="hero-imagen-desarrollador" src="images/cv_picture.jpg" alt="Photo of Pablo Rubio Prado" />
-      <h1>Hi, I'm Pablo Rubio</h1>
-      <h2>Software Developer</h2>
+      <img class="hero-developer-image" src="images/cv_picture.jpg"
+           alt="Photo of Pablo Rubio Prado" data-i18n-attr-alt="hero.photoAlt" />
+      <h1 data-i18n="hero.h1">Hi, I'm Pablo Rubio</h1>
+      <h2 data-i18n="hero.h2">Software Developer</h2>
+
+      <div class="hero-icons d-flex justify-content-center align-items-center gap-3 mt-3">
+        <a href="https://github.com/pablo13p" target="_blank" rel="noopener noreferrer">
+          <img src="images/github.png" alt="GitHub logo" class="hero-icon" data-i18n-attr-alt="hero.githubAlt">
+        </a>
+        <a href="https://www.linkedin.com/in/pablo-rubio-prado-19aa972bb/" target="_blank" rel="noopener noreferrer">
+          <img src="images/linkdin.png" alt="LinkedIn logo" class="hero-icon" data-i18n-attr-alt="hero.linkedinAlt">
+        </a>
+      </div>
+
+      <a href="documents/PabloRubioPrado_CV.pdf" download class="cv-btn mt-4">
+        <img src="images/download.png" alt="Download icon" data-i18n-attr-alt="ui.downloadIcon">
+        <span data-i18n="hero.downloadCv">Download CV</span>
+      </a>
     </div>
-    <div class="hero-inferior">
-      <!-- <img src="#" alt="Lower hero image"> -->
-    </div>
+
+    <div class="hero-inferior"></div>
   </section>
-  <!-- About me -->
+
+  <!-- About -->
   <section class="about-me dark-section" id="about">
     <div class="container-about-me">
-      <h2 class="about-me-text">About me</h2>
-      <p class="about-me-text">
+      <h2 class="about-me-text" data-i18n="about.title">About me</h2>
+      <p class="about-me-text" data-i18n="about.p1">
         I'm a passionate software developer with a solid background in
         computer science and a strong focus on building clean, efficient, and
         user-centered applications. My studies in Multiplatform Application
@@ -84,195 +91,147 @@
       </p>
     </div>
   </section>
+
   <!-- Experience -->
   <section class="experience clear-section" id="experience">
     <div class="container text-center">
       <div class="row">
-        <h2 class="section-title">Experience</h2>
-        <!-- Experience: EntreRedes -->
+        <h2 class="section-title" data-i18n="exp.title">Experience</h2>
+
+        <!-- EntreRedes -->
         <div class="column col-12 col-md-4">
           <svg xmlns="http://www.w3.org/2000/svg" width="40" height="40" fill="currentColor" class="bi bi-display"
-            viewBox="0 0 16 16">
-            <path
-              d="M0 4s0-2 2-2h12s2 0 2 2v6s0 2-2 2h-4q0 1 .25 1.5H11a.5.5 0 0 1 0 1H5a.5.5 0 0 1 0-1h.75Q6 13 6 12H2s-2 0-2-2zm1.398-.855a.76.76 0 0 0-.254.302A1.5 1.5 0 0 0 1 4.01V10c0 .325.078.502.145.602q.105.156.302.254a1.5 1.5 0 0 0 .538.143L2.01 11H14c.325 0 .502-.078.602-.145a.76.76 0 0 0 .254-.302 1.5 1.5 0 0 0 .143-.538L15 9.99V4c0-.325-.078-.502-.145-.602a.76.76 0 0 0-.302-.254A1.5 1.5 0 0 0 13.99 3H2c-.325 0-.502.078-.602.145" />
+            viewBox="0 0 16 16" aria-hidden="true">
+            <path d="M0 4s0-2 2-2h12s2 0 2 2v6s0 2-2 2h-4q0 1 .25 1.5H11a.5.5 0 0 1 0 1H5a.5.5 0 0 1 0-1h.75Q6 13 6 12H2s-2 0-2-2zm1.398-.855a.76.76 0 0 0-.254.302A1.5 1.5 0 0 0 1 4.01V10c0 .325.078.502.145.602q.105.156.302.254a1.5 1.5 0 0 0 .538.143L2.01 11H14c.325 0 .502-.078.602-.145a.76.76 0 0 0 .254-.302 1.5 1.5 0 0 0 .143-.538L15 9.99V4c0-.325-.078-.502-.145-.602a.76.76 0 0 0-.302-.254A1.5 1.5 0 0 0 13.99 3H2c-.325 0-.502.078-.602.145" />
           </svg>
-          <p class="experience-title">
-            Software Developer Intern — EntreRedes
-          </p>
-          <p>
-            Internship focused on web and software development tasks.
-            Collaborated on the creation and maintenance of client websites
-            using WordPress, applying HTML and CSS for layout and styling
-            adjustments. Contributed to optimizing performance and ensuring
+          <p class="experience-title" data-i18n="exp.ent.title">Software Developer Intern — EntreRedes</p>
+          <p data-i18n="exp.ent.p1">
+            Internship focused on web and software development tasks. Collaborated on the creation and maintenance of client websites
+            using WordPress, applying HTML and CSS for layout and styling adjustments. Contributed to optimizing performance and ensuring
             responsive design across different devices.
           </p>
           <div class="badges-container">
-            <span class="badge text-bg-primary">Software Development</span>
+            <span class="badge text-bg-primary" data-i18n="exp.badge.dev">Software Development</span>
             <span class="badge text-bg-primary">WordPress</span>
             <span class="badge text-bg-primary">HTML</span>
             <span class="badge text-bg-primary">CSS</span>
-            <span class="badge text-bg-primary">Teamwork</span>
+            <span class="badge text-bg-primary" data-i18n="exp.badge.team">Teamwork</span>
           </div>
         </div>
 
-        <!-- Experience: Bar Petete -->
+        <!-- Bar Petete -->
         <div class="column col-12 col-md-4">
           <svg xmlns="http://www.w3.org/2000/svg" width="40" height="40" fill="currentColor" class="bi bi-display"
-            viewBox="0 0 16 16">
-            <path
-              d="M0 4s0-2 2-2h12s2 0 2 2v6s0 2-2 2h-4q0 1 .25 1.5H11a.5.5 0 0 1 0 1H5a.5.5 0 0 1 0-1h.75Q6 13 6 12H2s-2 0-2-2zm1.398-.855a.76.76 0 0 0-.254.302A1.5 1.5 0 0 0 1 4.01V10c0 .325.078.502.145.602q.105.156.302.254a.5.5 0 0 0 .538.143L2.01 11H14c.325 0 .502-.078.602-.145a.76.76 0 0 0 .254-.302 1.5 1.5 0 0 0 .143-.538L15 9.99V4c0-.325-.078-.502-.145-.602a.76.76 0 0 0-.302-.254A1.5 1.5 0 0 0 13.99 3H2c-.325 0-.502.078-.602.145" />
+            viewBox="0 0 16 16" aria-hidden="true">
+            <path d="M0 4s0-2 2-2h12s2 0 2 2v6s0 2-2 2h-4q0 1 .25 1.5H11a.5.5 0 0 1 0 1H5a.5.5 0 0 1 0-1h.75Q6 13 6 12H2s-2 0-2-2zm1.398-.855a.76.76 0 0 0-.254.302A1.5 1.5 0 0 0 1 4.01V10c0 .325.078.502.145.602q.105.156.302.254a.5.5 0 0 0 .538.143L2.01 11H14c.325 0 .502-.078.602-.145a.76.76 0 0 0 .254-.302 1.5 1.5 0 0 0 .143-.538L15 9.99V4c0-.325-.078-.502-.145-.602a.76.76 0 0 0-.302-.254A1.5 1.5 0 0 0 13.99 3H2c-.325 0-.502.078-.602.145" />
           </svg>
-          <p class="experience-title">
-            Customer Service & Team Assistant — Bar Petete
-          </p>
-          <p>
-            Part-time position since Nov 2022, combining work and studies.
-            Managed customer service, inventory, and staff coordination while
-            maintaining strong communication and leadership skills in a
-            fast-paced environment.
+          <p class="experience-title" data-i18n="exp.pet.title">Customer Service & Team Assistant — Bar Petete</p>
+          <p data-i18n="exp.pet.p1">
+            Part-time position since Nov 2022, combining work and studies. Managed customer service, inventory, and staff coordination while
+            maintaining strong communication and leadership skills in a fast-paced environment.
           </p>
           <div class="badges-container">
-            <span class="badge text-bg-primary">Leadership</span>
-            <span class="badge text-bg-primary">Teamwork</span>
-            <span class="badge text-bg-primary">Time Management</span>
-            <span class="badge text-bg-primary">Customer Service</span>
+            <span class="badge text-bg-primary" data-i18n="exp.badge.lead">Leadership</span>
+            <span class="badge text-bg-primary" data-i18n="exp.badge.team">Teamwork</span>
+            <span class="badge text-bg-primary" data-i18n="exp.badge.time">Time Management</span>
+            <span class="badge text-bg-primary" data-i18n="exp.badge.cs">Customer Service</span>
           </div>
+          <!-- <a href="documents/Pablo_Rubio_CV.pdf" download class="rl-btn mt-4">
+            <img src="images/download.png" alt="Download icon" data-i18n-attr-alt="ui.downloadIcon">
+            <span data-i18n="exp.pet.rl">Download Recommendation Letter</span>
+          </a> -->
         </div>
 
-        <!-- Experience: Bar Kiosco El Parque -->
+        <!-- Kiosco El Parque -->
         <div class="column col-12 col-md-4">
           <svg xmlns="http://www.w3.org/2000/svg" width="40" height="40" fill="currentColor" class="bi bi-display"
-            viewBox="0 0 16 16">
-            <path
-              d="M0 4s0-2 2-2h12s2 0 2 2v6s0 2-2 2h-4q0 1 .25 1.5H11a.5.5 0 0 1 0 1H5a.5.5 0 0 1 0-1h.75Q6 13 6 12H2s-2 0-2-2zm1.398-.855a.76.76 0 0 0-.254.302A1.5 1.5 0 0 0 1 4.01V10c0 .325.078.502.145.602q.105.156.302.254a1.5 1.5 0 0 0 .538.143L2.01 11H14c.325 0 .502-.078.602-.145a.76.76 0 0 0 .254-.302 1.5 1.5 0 0 0 .143-.538L15 9.99V4c0-.325-.078-.502-.145-.602a.76.76 0 0 0-.302-.254A1.5 1.5 0 0 0 13.99 3H2c-.325 0-.502.078-.602.145" />
+            viewBox="0 0 16 16" aria-hidden="true">
+            <path d="M0 4s0-2 2-2h12s2 0 2 2v6s0 2-2 2h-4q0 1 .25 1.5H11a.5.5 0 0 1 0 1H5a.5.5 0 0 1 0-1h.75Q6 13 6 12H2s-2 0-2-2zm1.398-.855a.76.76 0 0 0-.254.302A1.5 1.5 0 0 0 1 4.01V10c0 .325.078.502.145.602q.105.156.302.254a.76.76 0 0 0 .254-.302 1.5 1.5 0 0 0 .143-.538L15 9.99V4c0-.325-.078-.502-.145-.602a.76.76 0 0 0-.302-.254A1.5 1.5 0 0 0 13.99 3H2c-.325 0-.502.078-.602.145" />
           </svg>
-          <p class="experience-title">
-            Customer Service Assistant — Bar Kiosco El Parque
-          </p>
-          <p>
-            Seasonal position (Jun–Oct 2022). Responsible for bar and terrace
-            service, customer attention, stock management, and daily
+          <p class="experience-title" data-i18n="exp.kio.title">Customer Service Assistant — Bar Kiosco El Parque</p>
+          <p data-i18n="exp.kio.p1">
+            Seasonal position (Jun–Oct 2022). Responsible for bar and terrace service, customer attention, stock management, and daily
             opening/closing operations.
           </p>
           <div class="badges-container">
-            <span class="badge text-bg-primary">Customer Service</span>
-            <span class="badge text-bg-primary">Inventory</span>
-            <span class="badge text-bg-primary">Adaptability</span>
-            <span class="badge text-bg-primary">Communication</span>
+            <span class="badge text-bg-primary" data-i18n="exp.badge.cs">Customer Service</span>
+            <span class="badge text-bg-primary" data-i18n="exp.badge.inv">Inventory</span>
+            <span class="badge text-bg-primary" data-i18n="exp.badge.adapt">Adaptability</span>
+            <span class="badge text-bg-primary" data-i18n="exp.badge.comm">Communication</span>
           </div>
         </div>
+
       </div>
     </div>
   </section>
+
   <!-- Skills -->
   <section class="skills-section container py-5" id="skills">
-    <h2 class="text-center mb-4 section-title">Skills</h2>
+    <h2 class="text-center mb-4 section-title" data-i18n="skills.title">Skills</h2>
 
     <div class="tech-panel">
       <div class="tech-group">
-        <h3>Programming Languages</h3>
+        <h3 data-i18n="skills.languages">Programming Languages</h3>
         <div class="tech-grid">
-          <div class="tech-item">
-            <img src="images/javaIcon.png" alt="Java"><span>Java</span>
-          </div>
-          <div class="tech-item">
-            <img src="images/kotlinIcon.png" alt="Kotlin"><span>Kotlin</span>
-          </div>
-          <div class="tech-item">
-            <img src="images/pythonIcon.png" alt="Python"><span>Python</span>
-          </div>
-          <div class="tech-item">
-            <img src="images/csharpIcon.png" alt="C#"><span>C#</span>
-          </div>
-          <div class="tech-item">
-            <img src="images/sqlIcon.png" alt="SQL"><span>SQL</span>
-          </div>
-          <div class="tech-item">
-            <img src="images/html.png" alt="HTML"><span>HTML</span>
-          </div>
-          <div class="tech-item">
-            <img src="images/css.png" alt="CSS"><span>CSS</span>
-          </div>
-          <div class="tech-item">
-            <img src="images/bootstrapIcon.png" alt="CSS"><span>Bootstrap</span>
-          </div>
-          <div class="tech-item">
-            <img src="images/xmlIcon.png" alt="XML"><span>XML</span>
-          </div>
+          <div class="tech-item"><img src="images/javaIcon.png" alt="Java"><span>Java</span></div>
+          <div class="tech-item"><img src="images/kotlinIcon.png" alt="Kotlin"><span>Kotlin</span></div>
+          <div class="tech-item"><img src="images/pythonIcon.png" alt="Python"><span>Python</span></div>
+          <div class="tech-item"><img src="images/csharpIcon.png" alt="C#"><span>C#</span></div>
+          <div class="tech-item"><img src="images/sqlIcon.png" alt="SQL"><span>SQL</span></div>
+          <div class="tech-item"><img src="images/html.png" alt="HTML"><span>HTML</span></div>
+          <div class="tech-item"><img src="images/css.png" alt="CSS"><span>CSS</span></div>
+          <div class="tech-item"><img src="images/bootstrapIcon.png" alt="Bootstrap"><span>Bootstrap</span></div>
+          <div class="tech-item"><img src="images/xmlIcon.png" alt="XML"><span>XML</span></div>
         </div>
       </div>
 
       <div class="tech-group">
-        <h3>Tools & Platforms</h3>
+        <h3 data-i18n="skills.tools">Tools & Platforms</h3>
         <div class="tech-grid">
-          <div class="tech-item">
-            <img src="images/gitIcon.png" alt="Git"><span>Git</span>
-          </div>
-          <div class="tech-item">
-            <img src="images/github.png" alt="GitHub"><span>GitHub</span>
-          </div>
-          <div class="tech-item">
-            <img src="images/eclipseIcon.webp" alt="Eclipse"><span>Eclipse</span>
-          </div>
-          <div class="tech-item">
-            <img src="images/intelliJIcon.png" alt="IntelliJ IDEA"><span>IntelliJ</span>
-          </div>
-          <div class="tech-item">
-            <img src="images/androidStudio.webp" alt="Android Studio"><span>Android Studio</span>
-          </div>
-          <div class="tech-item">
-            <img src="images/vscodeIcon.png" alt="Visual Studio"><span>Visual Studio</span>
-          </div>
-          <div class="tech-item">
-            <img src="images/vscode.png" alt="VS Code"><span>VS Code</span>
-          </div>
-          <div class="tech-item">
-            <img src="images/netbeansIcon.png" alt="NetBeans"><span>NetBeans</span>
-          </div>
-          <div class="tech-item">
-            <img src="images/wordpressIcon.png" alt="WordPress"><span>WordPress</span>
-          </div>
-          <div class="tech-item">
-            <img src="images/linuxIcon.png" alt="Linux"><span>Linux</span>
-          </div>
+          <div class="tech-item"><img src="images/gitIcon.png" alt="Git"><span>Git</span></div>
+          <div class="tech-item"><img src="images/github2.png" alt="GitHub"><span>GitHub</span></div>
+          <div class="tech-item"><img src="images/eclipseIcon.webp" alt="Eclipse"><span>Eclipse</span></div>
+          <div class="tech-item"><img src="images/intelliJIcon.png" alt="IntelliJ IDEA"><span>IntelliJ</span></div>
+          <div class="tech-item"><img src="images/androidStudio.webp" alt="Android Studio"><span>Android Studio</span></div>
+          <div class="tech-item"><img src="images/vscodeIcon.png" alt="Visual Studio"><span>Visual Studio</span></div>
+          <div class="tech-item"><img src="images/vscode.png" alt="VS Code"><span>VS Code</span></div>
+          <div class="tech-item"><img src="images/netbeansIcon.png" alt="NetBeans"><span>NetBeans</span></div>
+          <div class="tech-item"><img src="images/wordpressIcon.png" alt="WordPress"><span>WordPress</span></div>
+          <div class="tech-item"><img src="images/linuxIcon.png" alt="Linux"><span>Linux</span></div>
         </div>
       </div>
     </div>
   </section>
+
   <!-- Projects -->
   <section class="recents-projects clear-section d-flex flex-column" id="projects">
-    <h2 class="section-title black-text">Projects</h2>
-    <h3 class="section-description">
-      This are some of the projects that I do
-    </h3>
-    <!-- Projects gallery -->
+    <h2 class="section-title black-text" data-i18n="proj.title">Projects</h2>
+    <h3 class="section-description" data-i18n="proj.subtitle">This are some of the projects that I do</h3>
+
     <div class="container text-center project-container">
       <div class="row">
         <div class="col-12 col-md-6 offset-md-3 col-lg-4 offset-lg-4">
           <!-- Portfolio -->
           <div class="project">
             <div class="project-image">
-              <img src="images/portfolio.png" alt="Portfolio image" />
+              <img src="images/portfolio.png" alt="Portfolio image" data-i18n-attr-alt="proj.portfolio.alt" />
               <div class="overlay">
                 <div class="icon-container">
-                  <a href="https://github.com/" target="_blank" rel="noopener noreferrer">
-                    <i><img src="images/github.png" alt="Github Icon" class="githubIcon"></i>
-                    <path d="M8 0C3.58 0 0 3.58 0 8c0 3.54 2.29 6.53 5.47 7.59..." />
-                    </svg>
+                  <a href="https://github.com/pablo13p/pablo13p.github.io" target="_blank" rel="noopener noreferrer">
+                    <i><img src="images/github.png" alt="Github Icon" class="githubIcon" data-i18n-attr-alt="proj.githubIconAlt"></i>
                   </a>
                 </div>
               </div>
             </div>
             <div class="project-info">
-              <h3 class="project-title">Personal Portfolio</h3>
-              <p class="project-description">
+              <h3 class="project-title" data-i18n="proj.portfolio.title">Personal Portfolio</h3>
+              <p class="project-description" data-i18n="proj.portfolio.desc">
                 A responsive personal portfolio built with HTML, CSS, and
                 Bootstrap to showcase my work, skills, and projects as a
                 software developer.
               </p>
-
               <div class="project-technologies">
-                <h4>Technologies</h4>
+                <h4 data-i18n="proj.tech">Technologies</h4>
                 <div class="tech-icons">
                   <img src="images/html.png" alt="HTML Icon" />
                   <img src="images/css.png" alt="CSS Icon" />
@@ -281,34 +240,31 @@
               </div>
             </div>
           </div>
+          <!-- /Portfolio -->
         </div>
       </div>
     </div>
   </section>
+
   <!-- Education -->
   <section class="education-section container py-5" id="education">
-    <h2 class="text-center mb-4 section-title">Education</h2>
+    <h2 class="text-center mb-4 section-title" data-i18n="edu.title">Education</h2>
     <div class="row justify-content-center">
       <div class="col-12 col-md-4">
         <div id="list-education" class="list-group">
-          <a class="list-group-item list-group-item-action active" href="#edu-higher">
-            Higher Vocational Training (DAM)
-          </a>
-          <a class="list-group-item list-group-item-action" href="#edu-middle">
-            Intermediate Vocational Training
-          </a>
-          <a class="list-group-item list-group-item-action" href="#edu-basic">
-            Basic Vocational Training
-          </a>
+          <a class="list-group-item list-group-item-action active" href="#edu-higher" data-i18n="edu.nav.higher">Higher Vocational Training (DAM)</a>
+          <a class="list-group-item list-group-item-action" href="#edu-middle" data-i18n="edu.nav.middle">Intermediate Vocational Training</a>
+          <a class="list-group-item list-group-item-action" href="#edu-basic" data-i18n="edu.nav.basic">Basic Vocational Training</a>
         </div>
       </div>
 
       <div class="col-12 col-md-8">
         <div data-bs-spy="scroll" data-bs-target="#list-education" data-bs-smooth-scroll="true"
           class="scrollspy-example border rounded p-4" tabindex="0">
-          <h4 id="edu-higher" class="education-title">
+          <!-- Higher -->
+          <h4 id="edu-higher" class="education-title" data-i18n="edu.higher.title">
             Higher Vocational Training in Multiplatform Application Development (DAM)
-            <span class="text-muted">(2023 – Present)</span>
+            <span class="text-muted" data-i18n="edu.higher.dates">(2023 – Present)</span>
           </h4>
           <div class="container-fluid">
             <div class="row">
@@ -317,25 +273,20 @@
                 <p class="text-center"><em>IES Maestre</em></p>
               </div>
               <div class="col-8">
-                <p>
-                  An advanced vocational program specializing in software engineering and the development of
-                  applications
-                  across multiple platforms.<br><br>
-                  Core subjects and technologies: <br>
-                  Java, Kotlin, Python, C#, SQL, HTML, CSS, XML; development
-                  environments such as Eclipse, IntelliJ IDEA, Android Studio, Visual Studio, and GitHub. <br>
-                  Focused on software design, debugging, testing, and Agile methodologies (Scrum, Kanban), building a
-                  strong
-                  foundation in object-oriented programming and real-world application development.
-
+                <p data-i18n="edu.higher.p">
+                  An advanced vocational program specializing in software engineering and the development of applications
+                  across multiple platforms. Core subjects and technologies: Java, Kotlin, Python, C#, SQL, HTML, CSS, XML;
+                  development environments such as Eclipse, IntelliJ IDEA, Android Studio, Visual Studio, and GitHub. Focused on software design,
+                  debugging, testing, and Agile methodologies (Scrum, Kanban), building a strong foundation in OOP and real-world development.
                 </p>
               </div>
             </div>
           </div>
 
-          <h4 id="edu-middle" class="education-title">
+          <!-- Middle -->
+          <h4 id="edu-middle" class="education-title" data-i18n="edu.middle.title">
             Intermediate Vocational Training in Microcomputer Systems and Networks
-            <span class="text-muted">(2021 – 2023)</span>
+            <span class="text-muted" data-i18n="edu.middle.dates">(2021 – 2023)</span>
           </h4>
           <div class="container-fluid">
             <div class="row">
@@ -344,30 +295,19 @@
                 <p class="text-center"><em>EFA Moratalaz</em></p>
               </div>
               <div class="col-8">
-                <p>
-                  Technical training program focused on the installation, configuration, and maintenance of computer
-                  systems
-                  and network infrastructures.
-                  <br><br>
-                  Key areas of study: <br>
-                  Operating Systems Administration: Installation, configuration, and management of Windows and Linux
-                  environments. <br>
-                  Local Networks: Design, setup, routing, and implementation of network security measures. <br>
-                  Hardware Maintenance: Assembly, troubleshooting, repair, and upgrading of computer components and
-                  peripherals. <br>
-                  Cybersecurity: Application of best practices for data protection, access control, and system security.
-                  <br>
-                  Network Services: Configuration and administration of essential services such as DNS, DHCP, web and
-                  mail
-                  servers, and shared file systems.
+                <p data-i18n="edu.middle.p">
+                  Technical training focused on installation, configuration, and maintenance of computer systems and networks.
+                  Areas: OS administration (Windows/Linux), LAN design and security, hardware maintenance, cybersecurity, and network services
+                  (DNS, DHCP, web/mail servers, shared file systems).
                 </p>
               </div>
             </div>
           </div>
 
-          <h4 id="edu-basic" class="education-title">
+          <!-- Basic -->
+          <h4 id="edu-basic" class="education-title" data-i18n="edu.basic.title">
             Basic Vocational Training in Computer Systems and Networks
-            <span class="text-muted">(2019 – 2021)</span>
+            <span class="text-muted" data-i18n="edu.basic.dates">(2019 – 2021)</span>
           </h4>
           <div class="container-fluid">
             <div class="row">
@@ -376,22 +316,22 @@
                 <p class="text-center"><em>EFA Moratalaz</em></p>
               </div>
               <div class="col-8">
-                <p>
-                  Introductory technical program focused on computer hardware, operating systems, and basic network
-                  installation and maintenance. <br>
-                  Developed foundational skills in system administration, troubleshooting, teamwork, and
-                  problem-solving.
+                <p data-i18n="edu.basic.p">
+                  Introductory program covering computer hardware, operating systems, and basic network installation.
+                  Built fundamentals in system administration, troubleshooting, teamwork, and problem-solving.
                 </p>
               </div>
             </div>
           </div>
+          <!-- /Basic -->
         </div>
       </div>
     </div>
   </section>
+
   <!-- Certificates -->
   <section class="certificates-section container py-5" id="certificates">
-    <h2 class="text-center mb-4 section-title">Certificates</h2>
+    <h2 class="text-center mb-4 section-title" data-i18n="certs.title">Certificates</h2>
 
     <div class="certs-panel">
       <div class="row g-4 justify-content-center">
@@ -399,51 +339,45 @@
         <div class="modal fade" id="certOxfordModal" tabindex="-1" aria-hidden="true">
           <div class="modal-dialog modal-dialog-centered modal-lg">
             <div class="modal-content">
-              <button type="button" class="btn-close ms-auto me-2 mt-2" data-bs-dismiss="modal"
-                aria-label="Close"></button>
-              <img src="images/oxford.jpg" class="w-100 p-3" alt="Oxford B1 certificate">
+              <img src="images/oxford.jpg" class="w-100 p-3" alt="Oxford B1 certificate" data-i18n-attr-alt="certs.oxford.alt">
             </div>
           </div>
         </div>
 
-        <!-- Modal Mobile App Development App -->
+        <!-- Modal Google -->
         <div class="modal fade" id="certGoogleModal" tabindex="-1" aria-hidden="true">
           <div class="modal-dialog modal-dialog-centered modal-lg">
             <div class="modal-content">
-              <button type="button" class="btn-close ms-auto me-2 mt-2" data-bs-dismiss="modal"
-                aria-label="Close"></button>
-              <img src="images/google.jpg" class="w-100 p-3" alt="Google certificate">
+              <img src="images/google.jpg" class="w-100 p-3" alt="Google certificate" data-i18n-attr-alt="certs.google.alt">
             </div>
           </div>
         </div>
+
         <!-- Card B1 -->
         <div class="col-12 col-sm-6 col-lg-4">
           <article class="cert-card">
             <div class="cert-thumb" role="button" tabindex="0" data-bs-toggle="modal" data-bs-target="#certOxfordModal">
-              <img src="images/oxford.jpg" alt="Oxford Test of English – B1" />
+              <img src="images/oxford.jpg" alt="Oxford Test of English – B1" data-i18n-attr-alt="certs.oxford.alt" />
             </div>
             <div class="cert-info">
-              <h5>Oxford Test of English – B1 (CEFR)</h5>
-              <p>Issued by Oxford — Aug 2025</p>
-              <a href="certificates/Oxford_Test_of_English_Certificate.pdf" download class="cert-btn">Download
-                Certificate</a>
+              <h5 data-i18n="certs.oxford.title">Oxford Test of English – B1 (CEFR)</h5>
+              <p data-i18n="certs.oxford.issued">Issued by Oxford — Aug 2025</p>
+              <a href="certificates/Oxford_Test_of_English_Certificate.pdf" download class="cert-btn" data-i18n="certs.download">Download Certificate</a>
             </div>
           </article>
         </div>
 
-        <!-- Card Mobile Development Course -->
+        <!-- Card Google -->
         <div class="col-12 col-sm-6 col-lg-4">
           <article class="cert-card">
-            <div class="cert-thumb">
-              <img src="images/google.jpg" alt="Mobile App Development Course" />
+            <div class="cert-thumb" role="button" tabindex="0" data-bs-toggle="modal" data-bs-target="#certGoogleModal">
+              <img src="images/google.jpg" alt="Mobile App Development Course" data-i18n-attr-alt="certs.google.alt" />
             </div>
             <div class="cert-info">
-              <h5>Mobile App Development Course</h5>
-              <p>Issued by Google — 2025</p>
+              <h5 data-i18n="certs.google.title">Mobile App Development Course</h5>
+              <p data-i18n="certs.google.issued">Issued by Google — Oct 2025</p>
               <a href="https://skillshop.exceedlms.com/student/award/8R43CNdtWR13EC6B7q2h23yy" target="_blank"
-                rel="noopener noreferrer" class="cert-btn">
-                View<br>Certificate
-              </a>
+                rel="noopener noreferrer" class="cert-btn" data-i18n="certs.view">View<br>Certificate</a>
             </div>
           </article>
         </div>
@@ -451,50 +385,65 @@
       </div>
     </div>
   </section>
+
+  <!-- Contact -->
   <section class="contact-section container py-5" id="contact">
-    <h2 class="text-center mb-4 section-title">Contact</h2>
+    <h2 class="text-center mb-4 section-title" data-i18n="contact.title">Contact</h2>
 
     <div class="row justify-content-center align-items-stretch g-4">
       <!-- Form -->
       <div class="col-12 col-md-6">
         <form action="https://formspree.io/f/myznvqly" method="POST" class="contact-form">
           <div class="mb-3">
-            <label for="name" class="form-label">Full Name</label>
-            <input type="text" id="name" name="name" class="form-control" placeholder="Enter your name" required>
+            <label for="name" class="form-label" data-i18n="contact.nameLabel">Full Name</label>
+            <input type="text" id="name" name="name" class="form-control" placeholder="Enter your name"
+              required data-i18n-attr-placeholder="contact.namePh">
           </div>
           <div class="mb-3">
-            <label for="email" class="form-label">Email Address</label>
-            <input type="email" id="email" name="_replyto" class="form-control" placeholder="Enter your email" required>
+            <label for="email" class="form-label" data-i18n="contact.emailLabel">Email Address</label>
+            <input type="email" id="email" name="_replyto" class="form-control" placeholder="Enter your email"
+              required data-i18n-attr-placeholder="contact.emailPh">
           </div>
           <div class="mb-3">
-            <label for="message" class="form-label">Message</label>
+            <label for="message" class="form-label" data-i18n="contact.msgLabel">Message</label>
             <textarea id="message" name="message" class="form-control" rows="5" placeholder="Write your message..."
-              required></textarea>
+              required data-i18n-attr-placeholder="contact.msgPh"></textarea>
           </div>
-          <button type="submit" class="contact-btn">Send Message</button>
+          <button type="submit" class="contact-btn" data-i18n="contact.send">Send Message</button>
         </form>
       </div>
 
-      <!-- Information -->
+      <!-- Info -->
       <div class="col-12 col-md-6 d-flex flex-column justify-content-center">
         <div class="contact-info p-4">
-          <h4>Get in Touch</h4>
-          <p><i class="bi bi-envelope"><img src="images/correo.png" alt="Icono correo electrónico"></i>
-            pablorubioprado08@gmail.com</p>
-          <p><i class="bi bi-geo-alt"><img src="images/ubicacion.png" alt="Icono ubicación"></i> Bolaños de Calatrava,
-            Castilla-La Mancha, Spain</p>
+          <h4 data-i18n="contact.getInTouch">Get in Touch</h4>
+          <p>
+            <i class="bi bi-envelope">
+              <img src="images/correo.png" alt="Email icon" data-i18n-attr-alt="contact.emailAlt">
+            </i>
+            <span>pablorubioprado08@gmail.com</span>
+          </p>
+          <p>
+            <i class="bi bi-geo-alt">
+              <img src="images/ubicacion.png" alt="Location icon" data-i18n-attr-alt="contact.locAlt">
+            </i>
+            <span data-i18n="contact.location">Bolaños de Calatrava, Castilla-La Mancha, Spain</span>
+          </p>
         </div>
       </div>
     </div>
-
   </section>
-  <!-- Copyright -->
+
+  <!-- Footer -->
   <footer class="footer-section text-center py-3">
-    <p>© 2025 Pablo Rubio Prado. All rights reserved.</p>
+    <p data-i18n="footer.copy">© 2025 Pablo Rubio Prado. All rights reserved.</p>
   </footer>
+
+  <!-- JS -->
   <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/js/bootstrap.bundle.min.js"
     integrity="sha384-FKyoEForCGlyvwx9Hj09JcYn3nv7wiPVlz7YYwJrWVcXK/BmnVDxM+D2scQbITxI"
     crossorigin="anonymous"></script>
+  <!-- i18n -->
+  <script defer src="js/i18n.js"></script>
 </body>
-
 </html>

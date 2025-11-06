@@ -51,13 +51,20 @@
   padding: 3rem;
 }
 
-.hero-imagen-desarrollador {
+.hero-developer-image {
   width: 200px;
   height: 200px;
   border-radius: 50%;
   margin: 20px;
   box-shadow: 0 8px 24px rgba(0, 0, 0, 0.08);
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
 }
+
+.hero-developer-image:hover {
+  transform: scale(1.08);
+  box-shadow: 0 12px 32px rgba(0, 0, 0, 0.2);
+}
+
 
 .hero h1 {
   font-size: 2.5rem;
@@ -69,6 +76,42 @@
   font-size: 1.5rem;
   color: #615151;
 }
+.hero-icon {
+  transition: transform 0.3s ease;
+}
+
+.hero-icon:hover {
+  transform: scale(1.15);
+}
+
+.cv-btn {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  gap: 8px;
+  padding: 10px 20px;
+  background-color: #0a0a23;
+  color: #fff;
+  font-weight: 600;
+  font-size: 1rem;
+  border-radius: 8px;
+  text-decoration: none;
+  box-shadow: 0 4px 12px rgba(10, 10, 35, 0.12);
+  transition: background-color 0.3s ease, transform 0.2s ease, box-shadow 0.3s ease;
+}
+
+.cv-btn:hover {
+  background-color: #ff6600;
+  transform: translateY(-2px);
+  box-shadow: 0 6px 16px rgba(255, 102, 0, 0.25);
+}
+
+.cv-btn img {
+  width: 30px;
+  height: 30px;
+  filter: brightness(0) invert(1);
+}
+
 
 /* General Styles */
 html { scroll-behavior: smooth; }
@@ -122,8 +165,6 @@ h1, h2, h3, h4, h5 { text-transform: capitalize; }
 
 .section-text { font-size: 1.2rem; color: #444; }
 
-/* About Me override for contrast on dark background */
-.about-me .section-text { color: #ffffff; }
 
 /* Experience */
 .experience { padding: 40px 40px 60px 40px; }
@@ -157,6 +198,34 @@ h1, h2, h3, h4, h5 { text-transform: capitalize; }
 }
 
 .badges-container { font-size: 20px; font-weight: bold; }
+
+.rl-btn {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  gap: 8px;
+  padding: 10px 20px;
+  background-color: #1b1b32;
+  color: #fff;
+  font-weight: 600;
+  font-size: 1rem;
+  border-radius: 8px;
+  text-decoration: none;
+  box-shadow: 0 4px 12px rgba(10, 10, 35, 0.12);
+  transition: background-color 0.3s ease, transform 0.2s ease, box-shadow 0.3s ease;
+}
+
+.rl-btn:hover {
+  background-color: #ff6600;
+  transform: translateY(-2px);
+  box-shadow: 0 6px 16px rgba(255, 102, 0, 0.25);
+}
+
+.rl-btn img {
+  width: 30px;
+  height: 30px;
+  filter: brightness(0) invert(1);
+}
 
 /* Projects */
 .recents-projects {
