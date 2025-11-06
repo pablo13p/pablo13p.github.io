@@ -1,2 +1,17 @@
-# Portfolio
-Responsive personal portfolio built from scratch using HTML, CSS, and Bootstrap. Designed to highlight my projects, technical skills, and background in software development.
+# 🌐 Pablo Rubio Prado – Personal Portfolio
+
+Choose your language / Elige tu idioma 👇
+
+[🇬🇧 English](README_EN.md) | [🇪🇸 Español](README_ES.md)
+
+---
+
+<div align="center">
+
+![HTML5](https://img.shields.io/badge/HTML5-E34F26?logo=html5&logoColor=white)
+![CSS3](https://img.shields.io/badge/CSS3-1572B6?logo=css3&logoColor=white)
+![Bootstrap](https://img.shields.io/badge/Bootstrap-7952B3?logo=bootstrap&logoColor=white)
+![JavaScript](https://img.shields.io/badge/JavaScript-F7DF1E?logo=javascript&logoColor=black)
+![GitHub Pages](https://img.shields.io/badge/Deployed%20on-GitHub%20Pages-222222?logo=githubpages&logoColor=white)
+
+</div>
